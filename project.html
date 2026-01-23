@@ -1,21 +1,60 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Project Overview</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Overview | IntegralEMS</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="title">IntegralEMS | Project Transparency Portal</div>
+        <div class="subtitle">Project details</div>
+      </div>
+      <div class="userpill">Logged in as: Customer</div>
+    </div>
 
-<h2>Project Overview</h2>
+    <div class="page">
+      <div>
+        <div class="h1">Project Overview</div>
+        <div class="p">Controller PCB Assembly</div>
+      </div>
 
-<p><strong>Project:</strong> Controller PCB Assembly</p>
-<p><strong>Part Number:</strong> IEMS-CP-102</p>
-<p><strong>Quantity:</strong> 5,000 units</p>
-<p><strong>Revision:</strong> Rev B</p>
-<p><strong>Current Stage:</strong> Functional Testing</p>
-<p><strong>Next Stage:</strong> Final QA</p>
+      <div class="grid">
+        <div class="card split left">
+          <h3>Project Snapshot</h3>
 
-<a href="process.html">View Process Flow</a><br><br>
-<a href="index.html">Back to Dashboard</a>
+          <div class="kv">
+            <div class="k">Customer</div><div class="v">Customer Name</div>
+            <div class="k">Part Number</div><div class="v">IEMS-CP-102</div>
+            <div class="k">Quantity</div><div class="v">5,000 units</div>
+            <div class="k">Revision</div><div class="v">Rev B</div>
+          </div>
 
+          <div class="actions">
+            <a class="btn primary" href="process.html">View Process Flow</a>
+            <a class="btn" href="index.html">← Back to Dashboard</a>
+          </div>
+        </div>
+
+        <div class="card split right">
+          <h3>Status</h3>
+          <div class="meta">
+            <span class="badge"><span class="dot warn"></span>Current: Functional Testing</span>
+            <span class="badge"><span class="dot idle"></span>Next: Final QA</span>
+            <span class="badge">Last Updated: 12 Mar 2026</span>
+          </div>
+
+          <div class="notice" style="margin-top:12px;">
+            Certain process updates and reports are manually captured as part of IntegralEMS’ phased digital rollout. This ensures accuracy, accountability, and controlled process visibility.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">© IntegralEMS Pvt. Ltd.</div>
+    </div>
+  </div>
 </body>
 </html>
