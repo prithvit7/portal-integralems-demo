@@ -1,20 +1,84 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Documents & Quality</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documents & Quality | IntegralEMS</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="title">IntegralEMS | Project Transparency Portal</div>
+        <div class="subtitle">Documents & quality records</div>
+      </div>
+      <div class="userpill">Logged in as: Customer</div>
+    </div>
 
-<h2>Documents & Quality Records</h2>
+    <div class="page">
+      <div>
+        <div class="h1">Documents & Quality Records</div>
+        <div class="p">Controller PCB Assembly (IEMS-CP-102)</div>
+      </div>
 
-<ul>
-  <li>FAI_Report_IEMS-CP-102.pdf</li>
-  <li>Functional_Test_Summary_RevB.xlsx</li>
-  <li>Quality_Plan_Controller_PCB.pdf</li>
-  <li>RoHS_Compliance_Declaration.pdf</li>
-</ul>
+      <div class="grid">
+        <div class="card split left">
+          <h3>Available Documents</h3>
 
-<a href="index.html">Back to Dashboard</a>
+          <table class="table" aria-label="Documents">
+            <thead>
+              <tr>
+                <th>Document</th>
+                <th>Type</th>
+                <th>Uploaded</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>FAI_Report_IEMS-CP-102.pdf</td>
+                <td>FAI</td>
+                <td>06 Mar 2026</td>
+                <td><a href="#" onclick="return false;">View</a> · <a href="#" onclick="return false;">Download</a></td>
+              </tr>
+              <tr>
+                <td>Functional_Test_Summary_RevB.xlsx</td>
+                <td>Test Report</td>
+                <td>11 Mar 2026</td>
+                <td><a href="#" onclick="return false;">View</a> · <a href="#" onclick="return false;">Download</a></td>
+              </tr>
+              <tr>
+                <td>Quality_Plan_Controller_PCB.pdf</td>
+                <td>Quality Plan</td>
+                <td>04 Mar 2026</td>
+                <td><a href="#" onclick="return false;">View</a> · <a href="#" onclick="return false;">Download</a></td>
+              </tr>
+              <tr>
+                <td>RoHS_Compliance_Declaration.pdf</td>
+                <td>Compliance</td>
+                <td>05 Mar 2026</td>
+                <td><a href="#" onclick="return false;">View</a> · <a href="#" onclick="return false;">Download</a></td>
+              </tr>
+            </tbody>
+          </table>
 
+          <div class="actions">
+            <a class="btn" href="process.html">← Back to Process</a>
+            <a class="btn" href="index.html">Dashboard</a>
+          </div>
+        </div>
+
+        <div class="card split right">
+          <h3>Note</h3>
+          <div class="notice">
+            Document visibility is controlled to ensure customers receive accurate and approved records aligned to project stage and quality gates.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">© IntegralEMS Pvt. Ltd.</div>
+    </div>
+  </div>
 </body>
 </html>
