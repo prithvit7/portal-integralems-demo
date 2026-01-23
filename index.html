@@ -1,26 +1,80 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IntegralEMS | Project Transparency Portal</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { margin-bottom: 5px; }
-    .project { border: 1px solid #ddd; padding: 16px; margin-bottom: 16px; }
-    a { text-decoration: none; color: #1a73e8; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="title">IntegralEMS | Project Transparency Portal</div>
+        <div class="subtitle">Structured visibility into manufacturing progress</div>
+      </div>
+      <div class="userpill">Logged in as: Customer</div>
+    </div>
 
-<h1>IntegralEMS | Project Transparency Portal</h1>
-<p>Active Projects</p>
+    <div class="page">
+      <div>
+        <div class="h1">Active Projects</div>
+        <div class="p">Overview of projects currently in progress with IntegralEMS</div>
+      </div>
 
-<div class="project">
-  <strong>Controller PCB Assembly</strong><br>
-  Part Number: IEMS-CP-102<br>
-  Current Stage: Functional Testing<br>
-  Next Stage: Final QA<br><br>
-  <a href="project.html">View Project</a>
-</div>
+      <div class="grid">
+        <!-- Project 1 -->
+        <div class="card split left">
+          <h3>Controller PCB Assembly</h3>
+          <div class="meta">
+            <span class="badge"><span class="dot warn"></span>Current: Functional Testing</span>
+            <span class="badge"><span class="dot idle"></span>Next: Final QA</span>
+            <span class="badge">Part: IEMS-CP-102</span>
+            <span class="badge">Last Updated: 12 Mar 2026</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="project.html">View Project</a>
+          </div>
+        </div>
 
+        <!-- Project 2 -->
+        <div class="card split right">
+          <h3>Power Module Assembly</h3>
+          <div class="meta">
+            <span class="badge"><span class="dot warn"></span>Current: SMT Assembly</span>
+            <span class="badge"><span class="dot idle"></span>Next: Manual Assembly</span>
+            <span class="badge">Part: IEMS-PM-214</span>
+            <span class="badge">Last Updated: 11 Mar 2026</span>
+          </div>
+          <div class="actions">
+            <a class="btn" href="project.html">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card split left">
+          <h3>Sensor Board Pilot Lot</h3>
+          <div class="meta">
+            <span class="badge"><span class="dot good"></span>Current: Final QA</span>
+            <span class="badge"><span class="dot idle"></span>Next: Dispatch</span>
+            <span class="badge">Part: IEMS-SB-009</span>
+            <span class="badge">Last Updated: 10 Mar 2026</span>
+          </div>
+          <div class="actions">
+            <a class="btn" href="project.html">View Project</a>
+          </div>
+        </div>
+
+        <div class="card split right">
+          <h3>Transparency Note</h3>
+          <div class="p" style="margin:0">
+            This portal is a controlled visibility layer for customers and prospects. Data is captured with process discipline and presented in a clear, accountable format.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">© IntegralEMS Pvt. Ltd.</div>
+    </div>
+  </div>
 </body>
 </html>
