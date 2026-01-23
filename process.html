@@ -1,26 +1,91 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Process Flow</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Process Flow | IntegralEMS</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="title">IntegralEMS | Project Transparency Portal</div>
+        <div class="subtitle">Stage-wise visibility</div>
+      </div>
+      <div class="userpill">Logged in as: Customer</div>
+    </div>
 
-<h2>Manufacturing Process Status</h2>
+    <div class="page">
+      <div>
+        <div class="h1">Manufacturing Process Status</div>
+        <div class="p">Controller PCB Assembly (IEMS-CP-102)</div>
+      </div>
 
-<ul>
-  <li>SMT Assembly — Completed</li>
-  <li>Manual Assembly — Completed</li>
-  <li>Functional Testing — In Progress</li>
-  <li>Final QA — Not Started</li>
-  <li>Dispatch — Not Started</li>
-</ul>
+      <div class="grid">
+        <div class="card split left">
+          <h3>Process Flow</h3>
 
-<p style="font-size: 12px; color: gray;">
-Certain process updates and reports are manually captured as part of IntegralEMS’ phased digital rollout.
-</p>
+          <table class="table" aria-label="Process Flow">
+            <thead>
+              <tr>
+                <th>Stage</th>
+                <th>Status</th>
+                <th>Timestamp</th>
+                <th>Department</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SMT Assembly</td>
+                <td><span class="badge"><span class="dot good"></span>Completed</span></td>
+                <td>08 Mar 2026</td>
+                <td>Production</td>
+              </tr>
+              <tr>
+                <td>Manual Assembly</td>
+                <td><span class="badge"><span class="dot good"></span>Completed</span></td>
+                <td>09 Mar 2026</td>
+                <td>Production</td>
+              </tr>
+              <tr>
+                <td>Functional Testing</td>
+                <td><span class="badge"><span class="dot warn"></span>In Progress</span></td>
+                <td>12 Mar 2026</td>
+                <td>QA</td>
+              </tr>
+              <tr>
+                <td>Final QA</td>
+                <td><span class="badge"><span class="dot idle"></span>Not Started</span></td>
+                <td>—</td>
+                <td>QA</td>
+              </tr>
+              <tr>
+                <td>Dispatch</td>
+                <td><span class="badge"><span class="dot idle"></span>Not Started</span></td>
+                <td>—</td>
+                <td>Logistics</td>
+              </tr>
+            </tbody>
+          </table>
 
-<a href="documents.html">View Documents</a><br><br>
-<a href="index.html">Back to Dashboard</a>
+          <div class="actions">
+            <a class="btn primary" href="documents.html">View Documents</a>
+            <a class="btn" href="project.html">← Back to Project</a>
+            <a class="btn" href="index.html">Dashboard</a>
+          </div>
+        </div>
 
+        <div class="card split right">
+          <h3>Transparency Disclaimer</h3>
+          <div class="notice">
+            Certain process updates and reports are manually captured as part of IntegralEMS’ phased digital rollout. This ensures accuracy, accountability, and controlled process visibility.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">© IntegralEMS Pvt. Ltd.</div>
+    </div>
+  </div>
 </body>
 </html>
